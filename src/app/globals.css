@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --brand-primary: #00140a;
+  --brand-secondary: #1C1C1C;
+  --brand-tertiary: #2A2A2A;
+  --accent-green-light: #00E870;
+  --accent-green: #00cc63;
+  --accent-green-dark: #00b356;
+  --text-light: #ffffff;
+}
+
+
+@layer utilities {
+  .text-toggle-color {
+    @apply stroke-text-light text-text-light;
+  }
+}
+
+
+::selection {
+  background-color: #052f2e;
+  color: #2dd4c0;
+}

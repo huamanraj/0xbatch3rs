@@ -1,0 +1,18 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+  version="1.1" 
+  className="terminal"
+  x="0px" 
+  y="0px" 
+  viewBox="0 0 512 512" 
+  style="enable-background:new 0 0 512 512;" 
+  xml:space="preserve"
+  fill="#00FF00"
+>
+	<g>
+		<path 
+      d="M31,59.1v393.8h450V59.1H31z M452.9,424.8H59.1V87.2h393.8V424.8z M424.8,115.4H87.2v281.2h337.5V115.4z M227.9,256h-28.1   v28.1h-28.1v28.1h-28.1v-28.1h28.1V256h28.1v-28.1h-28.1v-28.1h-28.1v-28.1h28.1v28.1h28.1v28.1h28.1V256z M340.4,312.2H256v-28.1   h84.4V312.2z"
+    />
+	</g>
+</svg>
