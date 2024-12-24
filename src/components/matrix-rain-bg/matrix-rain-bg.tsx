@@ -94,7 +94,7 @@ export default function MatrixRainBg({
         window.removeEventListener('resize', handleResize);
       };
     }
-  }, [speed, intensity]);
+  }, [speed, intensity, matrixFontSize]);
 
 
   return (

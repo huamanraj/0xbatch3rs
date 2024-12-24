@@ -1,10 +1,8 @@
 "use client";
 import {
-  HamburgerMenu,
   TerminalLogo
 } from "@/app/assets/images/svg";
 import LightModeWarning from "../light-mode-warning/light-mode-warning";
-import { vt323 } from "@/app/layout";
 import GlitchText from "../glitch-text/glitch-text";
 
 
