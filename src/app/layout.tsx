@@ -13,19 +13,19 @@ export const metadata: Metadata = {
   },
 };
 
-export const sylarRoundUltra = localFont({
+const sylarRoundUltra = localFont({
   src: './assets/font/sylar-round-ultra.woff',
   variable: '--font-sylar-rounded',
 });
 
-export const vt323 = VT323({
+const vt323 = VT323({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
   variable: '--font-vt323',
 });
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   display: 'swap',
