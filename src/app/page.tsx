@@ -1,6 +1,4 @@
 import Header from "@/components/header/header";
-import RadialBinaryBg from "@/components/radial-binary-bg/radial-binary-bg";
-import MatrixRainBg from "@/components/matrix-rain-bg/matrix-rain-bg";
 import Footer from "@/components/footer/footer";
 import Hero from "@/components/landing-page/hero";
 import Features from "@/components/landing-page/features";
