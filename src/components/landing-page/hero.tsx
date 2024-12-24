@@ -1,10 +1,11 @@
+import { Search, Share } from "@/app/assets/images/svg";
 import { BinaryBackground } from "../binary-background/binary-background"; 
 import GlitchText from "../glitch-text/glitch-text";   
 
 export default function Hero() {    
   return (     
     <>       
-      <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden font-sans">       
+      <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden font-montserrat">       
         <BinaryBackground />       
         <div className="relative z-10 container mx-auto px-4">         
           <div className="w-full mx-auto">           
@@ -19,7 +20,7 @@ export default function Hero() {
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-light mb-6 leading-tight sm:leading-none">               
                 <span className="block mb-4">                 
-                  <GlitchText text="Batchers:" className="" />               
+                  <GlitchText text="Batchers:" />               
                 </span>               
                 <span className="block mb-4 bg-gradient-to-b from-text-light to-text-light/60 bg-clip-text text-transparent">                 
                   Share, Discover,               
@@ -29,18 +30,18 @@ export default function Hero() {
                 </span>             
               </h1>              
 
-              <p className="text-xl sm:text-2xl text-text-light/70 mb-8 max-w-3xl mx-auto leading-relaxed">               
+              <p className="text-xl sm:text-2xl text-text-light/70 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">               
                 Your <span className="text-accent-green">secure sanctuary</span> for sharing and discovering Windows batch scripts.                
                 Join the elite community of <span className="text-accent-green-light">batchers</span>.             
               </p>              
 
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">               
-                <button className="w-full sm:w-auto px-8 py-4 bg-accent-green hover:bg-accent-green-dark text-brand-primary font-bold rounded-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2 group">                 
-                  {/* <Share2 className="w-5 h-5 group-hover:rotate-12 transition-transform" /> */}                 
+                <button className="w-full sm:w-auto px-8 py-4 bg-accent-green text-brand-primary font-bold rounded-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2 group">                 
+                  <Share className="w-5 h-5 group-hover:rotate-12 transition-transform" />                 
                   Share Your Script               
                 </button>               
-                <button className="w-full sm:w-auto px-8 py-4 bg-brand-secondary hover:bg-brand-tertiary text-text-light font-bold rounded-lg transition-all transform hover:scale-105 border border-accent-green/20 hover:border-accent-green/40 flex items-center justify-center gap-2 group">                 
-                  {/* <Search className="w-5 h-5 group-hover:rotate-12 transition-transform" /> */}                 
+                <button className="w-full sm:w-auto px-8 py-4 bg-accent-green-dark text-accent-green-light font-bold rounded-lg transition-all transform hover:scale-105 border border-accent-green/20 hover:border-accent-green/40 flex items-center justify-center gap-2 group">                 
+                  <Search className="w-5 h-5 group-hover:rotate-12 transition-transform" />                 
                   Explore Scripts               
                 </button>             
               </div>           

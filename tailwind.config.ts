@@ -20,7 +20,7 @@ export default {
         "brand-tertiary": "#2A2A2A",
         "accent-green-light": "#00E870",
         "accent-green": "#00cc63",
-        "accent-green-dark": "#00b356",
+        "accent-green-dark": "#003d1f",
         "text-light": "#ffffff",
       },
       keyframes: {

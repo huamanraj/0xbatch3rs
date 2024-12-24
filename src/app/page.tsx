@@ -3,6 +3,10 @@ import RadialBinaryBg from "@/components/radial-binary-bg/radial-binary-bg";
 import MatrixRainBg from "@/components/matrix-rain-bg/matrix-rain-bg";
 import Footer from "@/components/footer/footer";
 import Hero from "@/components/landing-page/hero";
+import Features from "@/components/landing-page/features";
+import HowItWorks from "@/components/landing-page/how-it-works";
+import Faq from "@/components/landing-page/faq";
+import CTA from "@/components/landing-page/cta";
 
 
 export default function Home() {
@@ -16,6 +20,10 @@ export default function Home() {
         matrixFontSize={10} 
       /> */}
       <Hero />
+      <Features />
+      <HowItWorks />
+      <Faq />
+      <CTA />
       {/* <RadialBinaryBg /> */}
       <Footer />
     </>

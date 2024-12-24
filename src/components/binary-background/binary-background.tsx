@@ -4,6 +4,8 @@ import React, { useEffect, useRef } from 'react';
 
 export const BinaryBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const dropsRef = useRef<number[]>([]);
+  
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -12,17 +14,19 @@ export const BinaryBackground = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const updateCanvasSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      
+      const fontSize = 14;
+      const columns = Math.ceil(canvas.width / fontSize);
+      dropsRef.current = Array(columns).fill(1);
+    };
+
+    updateCanvasSize();
 
     const chars = '01';
     const fontSize = 14;
-    const columns = canvas.width / fontSize;
-    const drops: number[] = [];
-
-    for (let i = 0; i < columns; i++) {
-      drops[i] = 1;
-    }
 
     const draw = () => {
       ctx.fillStyle = 'rgba(0, 20, 10, 0.05)';
@@ -31,33 +35,29 @@ export const BinaryBackground = () => {
       ctx.fillStyle = '#00E870';
       ctx.font = `${fontSize}px JetBrains Mono`;
 
-      for (let i = 0; i < drops.length; i++) {
+      for (let i = 0; i < dropsRef.current.length; i++) {
         const text = chars[Math.floor(Math.random() * chars.length)];
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        ctx.fillText(text, i * fontSize, dropsRef.current[i] * fontSize);
 
-        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-          drops[i] = 0;
+        if (dropsRef.current[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          dropsRef.current[i] = 0;
         }
 
-        drops[i]++;
+        dropsRef.current[i]++;
       }
     };
 
     const interval = setInterval(draw, 33);
 
-    const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', updateCanvasSize);
 
     return () => {
       clearInterval(interval);
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', updateCanvasSize);
     };
   }, []);
 
+  
   return (
     <canvas
       ref={canvasRef}
