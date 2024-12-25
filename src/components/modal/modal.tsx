@@ -16,7 +16,7 @@ export default function Modal({ content, isOpen, onClose }: ModalPropsTypes) {
     <>
       <div
         className={cn(
-          "modal fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-toggle-background rounded-lg bg-brand-primary text-light-primary hidden animate-scanlines w-[90vw] sm:w-[500px]",
+          "modal fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-toggle-background rounded-lg bg-brand-primary text-light-primary hidden animate-scanlines w-[90vw] sm:w-[500px] z-50",
           isOpen && "block"
         )}
         style={{
