@@ -29,7 +29,7 @@ export default function LightModeWarning() {
         <Sun className="size-6" />
       </button>
 
-      <Modal 
+      <Modal
         content={warningMessage}
         isOpen={isModalOpen}
         onClose={handleCloseModal}
