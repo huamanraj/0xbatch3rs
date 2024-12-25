@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-accent-green/10 rounded-full blur-3xl" />                      
 
             <div className="text-center relative">             
-              <div className="inline-block mb-4 px-4 py-1 rounded-full bg-brand-secondary border border-accent-green/20 font-medium">               
+              <div className="inline-block mb-4 px-4 py-1 rounded-full bg-brand-secondary border border-accent-green/20 text-[10px] font-bold sm:text-base">               
                 <span className="text-accent-green">Batchers:</span>               
                 <span className="text-text-light/70 ml-2">Empowering Safe Script Sharing</span>             
               </div>                          
@@ -25,12 +25,12 @@ export default function Hero() {
                 <span className="block mb-4 bg-gradient-to-b from-text-light to-text-light/60 bg-clip-text text-transparent">                 
                   Share, Discover,               
                 </span>               
-                <span className="block bg-gradient-to-b from-accent-green via-accent-green-light to-accent-green bg-clip-text text-transparent">                 
+                <span className="block bg-gradient-to-b from-accent-green via-accent-green-light to-accent-green-dark bg-clip-text text-transparent">                 
                   Power of .BAT               
                 </span>             
               </h1>              
 
-              <p className="text-xl sm:text-2xl text-text-light/70 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">               
+              <p className="sm:text-xl text-lg text-text-light/70 mb-8 max-w-3xl mx-auto leading-relaxed font-medium">               
                 Your <span className="text-accent-green">secure sanctuary</span> for sharing and discovering Windows batch scripts.                
                 Join the elite community of <span className="text-accent-green-light">batchers</span>.             
               </p>              

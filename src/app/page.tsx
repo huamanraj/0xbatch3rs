@@ -12,17 +12,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <MatrixRainBg 
-        speed={10} 
-        intensity={90} 
-        matrixFontSize={10} 
-      /> */}
       <Hero />
-      <Features />
-      <HowItWorks />
-      <Faq />
-      <CTA />
-      {/* <RadialBinaryBg /> */}
+      <div>
+        <Features />
+        <HowItWorks />
+        <Faq />
+        <CTA />
+      </div>
       <Footer />
     </>
   );
